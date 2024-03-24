@@ -1,6 +1,6 @@
-Assignment 1
+## Assignment 1
 
-1. What is OLAP and OLTP?
+### 1. What is OLAP and OLTP?
 
 Data is stored and processed using two different types of data management systems: OLAP and OLTP. Both are used to store new data and query already-existing data. 
 Businesses use OLAP for analytical processing of historical data and transactional processing of real-time transactional data. 
@@ -17,7 +17,7 @@ OLTP:
 OLTP, or Online Transaction Processing, is geared towards the swift processing of transactional data with immediate updates. Its primary function is to manage database transactions such as order processing, customer account management, and inventory updates.
 - In OLTP systems, data is structured in a single dimension and stored within relational databases. Each row represents a specific instance, while columns denote attributes associated with those instances. Data architecture in OLTP systems emphasizes prioritizing write operations to efficiently handle high-frequency and high-volume transactional data while upholding data integrity. For instance, in cases where simultaneous purchases of the same product occur, the system considers chronological order, prioritizing the fulfillment of the first customer's order if stock is limited. Ensuring availability is paramount, achieved through the maintenance of multiple data backups. Performance-wise, OLTP systems excel in rapid processing, typically achieving processing times in milliseconds or less. Real-time updates ensure the accuracy and consistency of data. Storage requirements for OLTP systems typically range in gigabytes, as data may be periodically transferred to OLAP systems for deeper analysis. These systems also demand significant computational resources to efficiently handle transactional processing. Examples of OLTP usage encompass real-time transaction processing, dynamic updates of inventory levels, and the management of customer accounts including rewards and returns.
 
-2. Differences between OLAP and OLTP
+### 2. Differences between OLAP and OLTP
 
 |OLAP|OLTP|
 |:---|:---|
@@ -28,7 +28,7 @@ OLTP, or Online Transaction Processing, is geared towards the swift processing o
 |Centralized data store, compute-intensive data reads	|Gigabytes storage, significant computational resources|
 |Analyzing data for inventory budgeting, predicting customer behavior|Processing orders, updating inventory levels|
 
-4. Normal Forms:
+### 3. Normal Forms:
 
 Normalization is the process of organizing data into separate tables/entities and establishing relationships between them using unique identifiers. This practice is crucial for safeguarding data against anomalies during insertion, update, and deletion, thereby ensuring data integrity and consistency. There are four main normal forms (NFs) in database normalization:
 
@@ -54,7 +54,7 @@ The database must meet the requirements of 1NF, 2NF, 3NF, and BCNF.
 It should not contain any multivalued dependencies, where an attribute's value depends on multiple values from other attributes.
 
 
-4. Dimension vs Fact Tables
+### 4. Dimension vs Fact Tables
 
 Dimension Table:
 Dimensions refer to distinct entities within the dataset, such as customers, orders, time, and products. Each of these entities is represented by individual tables known as dimension tables.
@@ -63,6 +63,7 @@ Fact Table:
 Fact tables store measures derived from the dimensions. These measures are stored in a centralized fact table.
 
 Types of Dimensions:
+
 Static Dimension:
 A dimension that remains constant over time, such as gender or status.
 
@@ -80,7 +81,7 @@ This dimension combines unrelated, small dimensions into a single dimension to s
 
 
 
-5. Snowflake and Star Schemas
+### 5. Snowflake and Star Schemas
 
 Star Schema:
 The star schema is a straightforward type of data warehouse schema, visually resembling a star. It comprises a central fact table surrounded by dimension tables. Data retrieval involves a single join between the dimension and fact tables. In this schema, dimension tables may not necessarily be normalized.
