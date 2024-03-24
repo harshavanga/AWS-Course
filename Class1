@@ -1,0 +1,16 @@
+1. OLAP vs OLTP
+
+Data is stored and analyzed using two different types of data management systems: OLAP and OLTP. Both are used to store new data and query already-existing data. Businesses handle transactions and their demands for analytics and reporting by combining OLAP and OLTP systems.
+
+OLAP: Online analytical processing optimized for sophisticated data analysis and reporting is what this acronym stands for. Aggregated data analysis is done with it. For instance, OLAP systems are used in business to create reports, carry out intricate data analysis, and spot trends.
+
+
+Data formatting: OLAP systems store data in multidimensional data models, in which the values indicate measures of the points at which the dimensions intersect and the various dimensions correspond to distinct aspects of the data.
+
+Data architecture: Manages high-frequency, high-volume transactional data without sacrificing data integrity. Gives priority to data write operations. When two customers purchase the same item at the same time, for instance, the chronological order is taken into account, and the client who placed the initial order is given preference when the item is the last one in stock. Maintaining several data backups is how availability is accomplished, which is crucial.
+
+Performance: Updates happen instantly, with processing times of milliseconds or less.
+
+Computer and storage needs: Since data can be cleaned after being transferred to an OLAP system, storage requirements are expressed in gigabytes. also computationally intensive.
+
+Examples of applications for OLTP include managing customer account rewards and refunds, updating inventory levels, and processing transactions in real-time.
