@@ -38,34 +38,34 @@ OLTP, or Online Transaction Processing, is geared towards the swift processing o
 
 Normalization is the process of organizing data into separate tables/entities and establishing relationships between them using unique identifiers. This practice is crucial for safeguarding data against anomalies during insertion, update, and deletion, thereby ensuring data integrity and consistency. There are four main normal forms (NFs) in database normalization:
 
-First Normal Form (1NF):
+**First Normal Form (1NF)**:
 Attributes/column values must be atomic and not contain repeating groups.
 Values within attributes should be of the same type.
 Attributes must be unique.
 The order of attributes should not matter.
 Each row must be uniquely identifiable, requiring a primary key.
 
-Second Normal Form (2NF):
+**Second Normal Form (2NF)**:
 The database must adhere to 1NF requirements.
 Each non-key attribute should depend on the entire primary key (in the case of a composite primary key), avoiding partial dependencies.
 
-Third Normal Form (3NF):
+**Third Normal Form (3NF)**:
 The database must satisfy 1NF and 2NF criteria.
 None of the non-key attributes should depend on other non-key attributes, eliminating transitive dependencies.
 BCNF is a stricter version of 3NF.
 Every attribute in a table should depend solely on the key, known as the whole key, without any other dependencies.
 
-Fourth Normal Form (4NF):
+**Fourth Normal Form (4NF)**:
 The database must meet the requirements of 1NF, 2NF, 3NF, and BCNF.
 It should not contain any multivalued dependencies, where an attribute's value depends on multiple values from other attributes.
 
 
 ### 4. Dimension vs Fact Tables
 
-Dimension Table:
+**Dimension Table**:
 Dimensions refer to distinct entities within the dataset, such as customers, orders, time, and products. Each of these entities is represented by individual tables known as dimension tables.
 
-Fact Table:
+**Fact Table**:
 Fact tables store measures derived from the dimensions. These measures are stored in a centralized fact table.
 
 Types of Dimensions:
