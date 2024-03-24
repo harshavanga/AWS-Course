@@ -89,10 +89,10 @@ This dimension combines unrelated, small dimensions into a single dimension to s
 
 ### 5. Snowflake and Star Schemas
 
-Star Schema:
+**Star Schema**:
 The star schema is a straightforward type of data warehouse schema, visually resembling a star. It comprises a central fact table surrounded by dimension tables. Data retrieval involves a single join between the dimension and fact tables. In this schema, dimension tables may not necessarily be normalized.
 
-Snowflake Schema:
+**Snowflake Schema**:
 The snowflake schema expands upon the star schema by incorporating additional dimensions, resulting in a structure reminiscent of a snowflake. Here, the fact table is encircled by dimension tables, which in turn are surrounded by further dimension tables. Retrieving data from dimensions and fact tables requires multiple joins. Notably, the dimension tables in this schema are normalized, leading to their division into multiple dimension tables.
 
 
